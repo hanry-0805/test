@@ -1,0 +1,104 @@
+.box {
+  border: 1px solid red;
+  font-size: 30px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.col {
+  color: green;
+  font-size: 50px;
+}
+
+.greeting {
+  color: blue;
+}
+
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+// Modal组件的样式
+.qf-model {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  .header {
+    line-height: 30px;
+    height: 60px;
+    overflow: hidden;
+    &>span:first-child {
+      float: left;
+    }
+    &>span:last-child {
+      float: right;
+      cursor: pointer;
+      padding-left: 20px;
+    }
+  }
+  .footer {
+    margin-top: 25px;
+    text-align: right;
+    span {
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      text-align: center;
+      padding: 0 15px;
+      margin-left: 20px;
+    }
+    .del {
+      background-color: red;
+      color: white;
+      border-color: red;
+    }
+    .confirm {
+      background-color: blue;
+      color: white;
+      border-color: blue;
+    }
+    .cancel {
+      border-color: #ccc;
+      color: black;
+    }
+  }
+}
+
+// 管理系统的简单布局
+.box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  background-color: rgba(0, 12, 23, 1);
+  &>a {
+    color: white;
+    display: block;
+    line-height: 36px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #aaa;
+  }
+  &>a.on {
+    color: red;
+  }
+}
+.box2 {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  bottom: 0;
+  right: 0;
+  background-color: #eeeeee;
+  padding: 25px;
+}
